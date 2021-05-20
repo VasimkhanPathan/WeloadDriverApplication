@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+    android:background="@drawable/backgourd_rounded_top_corner"
+    android:text="06"
+    android:paddingTop="5dp"
+    android:textSize="17sp"
+    android:gravity="center"
+    android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/background_rounded_bottom_corner"
+            android:text="jan 21"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:paddingTop="5dp"
+          />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/gray"
+                android:text="Job ID "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvJobId"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/gray"
+                android:text="Pick up location "/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPickuuLocation"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00 sdfasdfsadfasdfsd "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/gray"
+                android:text="Drop location "/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDropLocation"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="@color/gray"
+                android:text="Payment Status "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPaymentStatus"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_attach_money_24"
+            android:id="@+id/tvCharges"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#40C5A1"
+            android:text="120000"/>
+    </LinearLayout>
+</LinearLayout>

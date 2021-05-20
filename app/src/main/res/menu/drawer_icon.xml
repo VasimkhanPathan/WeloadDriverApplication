@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="home"
+    android:id="@+id/menuHome"
+    android:icon="@drawable/ic_home_solid"
+    android:iconTint="@color/splash_color"/>
+    <item
+        android:title="Jobs"
+        android:id="@+id/menuJob"
+        android:icon="@drawable/ic_truck_solid"
+        android:iconTint="@color/splash_color"/>
+    <item
+        android:title="Wallet"
+        android:id="@+id/menuWallet"
+        android:icon="@drawable/ic_wallet_solid"
+        android:iconTint="@color/splash_color"/>
+    <item
+        android:title="Job History"
+        android:id="@+id/menuJobHistory"
+        android:icon="@drawable/ic_file_alt_solid"
+        android:iconTint="@color/splash_color"/>
+    <item
+        android:title="Price List"
+        android:id="@+id/menuPriceList"
+        android:icon="@drawable/ic_baseline_attach_money_24_blue"
+        android:iconTint="@color/splash_color"/>
+    <item
+        android:title="Logout"
+        android:id="@+id/menuLogOut"
+        android:icon="@drawable/ic_user_circle_solid"
+        android:iconTint="@color/splash_color"/>
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="splash_color">#255392</color>
+    <color name="button_color">#40C5A1</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="red">#EE6C6C</color>
+    <color name="ongoing">#00B9FF</color>
+    <color name="complete">#FF0090</color>
+    <color name="pending">#FF9100</color>
+    <color name="canceled">#777474</color>
+    <color name="ontime">#40C5A1</color>
+    <color name="red_button">#FF6A6A</color>
+    <color name="gray">#707070</color>
+    <color name="light_gray">#CECECE</color>
+
+
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+
+</resources>
