@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "782544366886",
+    "project_id": "weload-orders",
+    "storage_bucket": "weload-orders.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782544366886:android:5f1bd4afe16c25c807a5e7",
+        "android_client_info": {
+          "package_name": "com.weload.driverapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782544366886-ngeo01lm6jslvgipij8kciq1kbsg4qgl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.weload.driverapplication",
+            "certificate_hash": "5c553161c1864819feeea58a2e526486ae72b4a2"
+          }
+        },
+        {
+          "client_id": "782544366886-4m6r7k32fbstk939usncqvcutu8siogg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb47bLpQ1-RbsABsFKBkUvwCsAE9_P_yY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782544366886-4m6r7k32fbstk939usncqvcutu8siogg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

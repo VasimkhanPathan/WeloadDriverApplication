@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@drawable/image_background"
         android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+  <!--  <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/ivImage"
         android:padding="3dp"
-        android:layout_gravity="center"
-        android:src="@drawable/images"
        />
         <ImageView
             android:layout_width="24dp"
@@ -26,7 +22,19 @@
             android:layout_marginTop="-240dp"
             android:layout_marginRight="20dp"
             android:layout_gravity="end"
+            android:visibility="gone"
             android:src="@drawable/ic_times_circle_regular"
-            />
+            />-->
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="288dp"
+            android:layout_height="248dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.685" />
     </LinearLayout>
 </LinearLayout>

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
+    android:layout_gravity="end"
     tools:context=".home.HomeActivity">
 
     <RelativeLayout
@@ -92,7 +93,7 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Driver ID : "
+                    android:text="Mobile No : "
                     android:textColor="@color/white"
                     android:textSize="16sp" />
 
@@ -100,8 +101,6 @@
                     android:id="@+id/tvDriverId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:text="1233534545"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -194,7 +193,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="50dp"
-                android:src="@drawable/ic_we_load_logo_02_blue" />
+                android:src="@drawable/ic_weload_driver_logo_02" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -202,6 +201,7 @@
                 android:text="App version 1.0"
                 android:textSize="10sp"
                 android:layout_marginBottom="10dp"
+                android:id="@+id/tvAppVersion"
                 android:textColor="@color/splash_color"/>
         </LinearLayout>
 

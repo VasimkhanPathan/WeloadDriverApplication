@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
-    android:title="home"
+    android:title="Home"
     android:id="@+id/menuHome"
     android:icon="@drawable/ic_home_solid"
     android:iconTint="@color/splash_color"/>
@@ -21,9 +21,9 @@
         android:icon="@drawable/ic_file_alt_solid"
         android:iconTint="@color/splash_color"/>
     <item
-        android:title="Price List"
-        android:id="@+id/menuPriceList"
-        android:icon="@drawable/ic_baseline_attach_money_24_blue"
+        android:title="Leave"
+        android:id="@+id/menuLeave"
+        android:icon="@drawable/leave_cal"
         android:iconTint="@color/splash_color"/>
     <item
         android:title="Logout"

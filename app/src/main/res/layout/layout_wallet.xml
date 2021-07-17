@@ -12,20 +12,20 @@
         android:gravity="center"
         android:orientation="vertical">
 <TextView
-    android:layout_width="60dp"
+    android:layout_width="50dp"
     android:layout_height="30dp"
     android:background="@drawable/backgourd_rounded_top_corner"
     android:text="06"
+    android:id="@+id/tvDate"
     android:paddingTop="5dp"
-    android:textSize="17sp"
     android:gravity="center"
     android:textColor="@color/white"/>
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="50dp"
             android:layout_height="30dp"
             android:background="@drawable/background_rounded_bottom_corner"
             android:text="jan 21"
-            android:textSize="17sp"
+            android:id="@+id/tvMontYear"
             android:gravity="center"
             android:singleLine="true"
             android:textColor="@color/white"
@@ -46,7 +46,7 @@
                 android:textStyle="bold"
                 android:textSize="10sp"
                 android:textColor="@color/gray"
-                android:text="Job ID "/>
+                android:text="Job ID: "/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                 android:textStyle="bold"
                 android:textSize="10sp"
                 android:textColor="@color/gray"
-                android:text="Pick up location "/>
+                android:text="Job Date: "/>
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                 android:textStyle="bold"
                 android:textSize="10sp"
                 android:textColor="@color/gray"
-                android:text="Drop location "/>
+                android:text="Transaction Id "/>
             <TextView
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                 android:textSize="10sp"
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/gray"
-                android:text="11 jan 2021,11:00"/>
+                android:text="11 jan 2021,11:00xcvzxcvzvcvzxcv"/>
         </LinearLayout>
 
         <LinearLayout
@@ -105,36 +105,35 @@
                 android:textStyle="bold"
                 android:textSize="10sp"
                 android:textColor="@color/gray"
-                android:text="Payment Status "/>
+                android:visibility="gone"
+                android:text="Note: "/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvPaymentStatus"
                 android:textSize="10sp"
-                android:layout_marginLeft="10dp"
                 android:textColor="@color/gray"
-                android:text="11 jan 2021,11:00"/>
+                android:text="11 jan 2021,11:00 xcvzxc vvxcvxcvzxcvzxcvzxcvxcvzxcv"/>
         </LinearLayout>
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|right"
-        android:layout_marginLeft="20dp"
+        android:layout_gravity="center|end"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
             android:src="@drawable/ic_baseline_add_24" />
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_baseline_attach_money_24"
             android:id="@+id/tvCharges"
-            android:gravity="center"
+            android:gravity="end"
             android:textStyle="bold"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:textColor="#40C5A1"
             android:text="120000"/>
     </LinearLayout>

@@ -28,8 +28,8 @@
                     android:id="@+id/layoutJobs"
                     android:layout_weight="1">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:padding="20dp"
                         android:src="@drawable/ic_truck_outline_01"
                         android:background="@drawable/rounded_shape"/>
@@ -40,21 +40,21 @@
                         android:gravity="center"
                         android:text="Jobs"
                         android:textColor="@color/splash_color"
-                        android:textSize="16sp"/>
+                        android:textSize="15sp"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="107dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:id="@+id/layoutWallet"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:background="@drawable/rounded_shape"
                         android:padding="20dp"
                         android:src="@drawable/ic_wallet_outline_01" />
@@ -66,7 +66,7 @@
                         android:text="Wallet"
                         android:gravity="center"
                         android:textColor="@color/splash_color"
-                        android:textSize="16sp"/>
+                        android:textSize="15sp"/>
 
                 </LinearLayout>
 
@@ -78,8 +78,8 @@
                     android:id="@+id/layoutJobHistory"
                     android:orientation="vertical">
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
                         android:padding="20dp"
                         android:src="@drawable/ic_file_alt_outline"
                         android:background="@drawable/rounded_shape"/>
@@ -88,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:text="Job History"
                         android:gravity="center"
-                        android:textSize="16sp"
+                        android:textSize="15sp"
                         android:layout_marginTop="5dp"
                         android:textColor="@color/splash_color"/>
                 </LinearLayout>
@@ -117,12 +117,13 @@
                         android:layout_weight="1"
                         android:text="Today's Job"
                         android:textColor="@color/splash_color"
-                        android:textSize="18sp"
+                        android:textSize="17sp"
                         android:textStyle="bold"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:id="@+id/tvViewall"
                         android:text="View All"
                         android:layout_marginRight="30dp"
                         android:background="@drawable/button_background"
@@ -136,7 +137,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/profileLayout"
-                    android:padding="20dp"
+                    android:padding="10dp"
                     android:gravity="center"
                     android:weightSum="3">
                     <LinearLayout
@@ -146,11 +147,12 @@
                         android:gravity="center"
                         android:layout_weight="1">
                         <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:padding="20dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
                             android:textSize="17sp"
                             android:text="2"
+                            android:id="@+id/tvPeningJob"
                             android:gravity="center"
                             android:background="@drawable/pending_circle"/>
 
@@ -161,7 +163,7 @@
                             android:gravity="center"
                             android:text="Pending"
                             android:textColor="@color/splash_color"
-                            android:textSize="16sp" />
+                            android:textSize="15sp" />
 
                     </LinearLayout>
 
@@ -173,11 +175,12 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:background="@drawable/ongoing_cricle"
-                            android:padding="20dp"
+                            android:padding="10dp"
                             android:text="3"
+                            android:id="@+id/tvOngoingJob"
                             android:textSize="17sp"
                             android:textColor="@color/ongoing"
                             android:gravity="center"
@@ -190,7 +193,7 @@
                             android:text="Ongoing"
                             android:gravity="center"
                             android:textColor="@color/splash_color"
-                            android:textSize="16sp"/>
+                            android:textSize="15sp"/>
 
                     </LinearLayout>
 
@@ -201,11 +204,12 @@
                         android:gravity="center"
                         android:orientation="vertical">
                         <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:background="@drawable/complete_cricle"
-                            android:padding="20dp"
+                            android:padding="10dp"
                             android:text="3"
+                            android:id="@+id/tvCompletedJob"
                             android:textSize="17sp"
                             android:textColor="@color/complete"
                             android:gravity="center" />
@@ -214,7 +218,7 @@
                             android:layout_height="wrap_content"
                             android:text="Complete"
                             android:gravity="center"
-                            android:textSize="16sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="5dp"
                             android:textColor="@color/splash_color"/>
                     </LinearLayout>
@@ -223,8 +227,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/profileLayout"
-                    android:padding="20dp"
+                    android:padding="10dp"
                     android:gravity="center"
+                    android:visibility="gone"
                     android:weightSum="3">
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -233,9 +238,9 @@
                         android:gravity="center"
                         android:layout_weight="1">
                         <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:padding="20dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
                             android:text="5"
                             android:textSize="17sp"
                             android:gravity="center"
@@ -248,7 +253,7 @@
                             android:gravity="center"
                             android:text="Canceled"
                             android:textColor="@color/splash_color"
-                            android:textSize="16sp"/>
+                            android:textSize="15sp"/>
 
                     </LinearLayout>
 
@@ -260,9 +265,9 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:padding="20dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
                             android:text="5"
                             android:textSize="17sp"
                             android:gravity="center"
@@ -276,7 +281,7 @@
                             android:text="On Time"
                             android:gravity="center"
                             android:textColor="@color/splash_color"
-                            android:textSize="16sp"/>
+                            android:textSize="15sp"/>
 
                     </LinearLayout>
 
@@ -287,9 +292,9 @@
                         android:gravity="center"
                         android:orientation="vertical">
                         <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:padding="20dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
                             android:text="5"
                             android:textSize="17sp"
                             android:gravity="center"
@@ -300,7 +305,7 @@
                             android:layout_height="wrap_content"
                             android:text="Delayed"
                             android:gravity="center"
-                            android:textSize="16sp"
+                            android:textSize="15sp"
                             android:layout_marginTop="5dp"
                             android:textColor="@color/splash_color"/>
                     </LinearLayout>
@@ -318,6 +323,7 @@
                     android:layout_marginBottom="30dp"
                     android:padding="10dp"
                     android:textStyle="bold"
+                    android:visibility="gone"
                     />
             </LinearLayout>
         </RelativeLayout>

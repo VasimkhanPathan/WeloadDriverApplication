@@ -11,12 +11,24 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:visibility="gone">
+       android:layout_marginLeft="5dp"
+       android:gravity="center"
+        android:orientation="vertical"
+        >
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_baseline_solid_cricle"/>
+
+        <View
+            android:layout_width="1pt"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_dot_line" />
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/cricle_blue_stroke"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,10 +55,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/tvJobId"
      
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="5dp"
         android:textColor="@color/gray"
         android:text="12123123"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,19 +71,40 @@
         android:id="@+id/tvJobStatus"
         android:layout_marginRight="20dp"
         android:layout_gravity="end"
-     
         android:textStyle="bold"
         android:textColor="@color/pending"
-        android:text="Assinged"/>
+        android:text="View"/>
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginRight="20dp"
+        android:id="@+id/viewIcon"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
     </LinearLayout>
 
 </LinearLayout>
-    <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:textColor="@color/gray"
+                android:text="Customer Name :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCustomerName"
+
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/gray"
+                android:text="12123123"/>
+        </LinearLayout>
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
             <TextView
@@ -79,16 +113,56 @@
                 android:textStyle="bold"
              
                 android:textColor="@color/gray"
-                android:text="Pick Up "/>
+                android:text="Pick Up Date: "/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvPickupDate"
              
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="5dp"
                 android:textColor="@color/gray"
                 android:text="11 jan 2021,11:00"/>
     </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:textColor="@color/gray"
+                android:text="Pick Up Time: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPickupTime"
+
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+
+                android:textColor="@color/gray"
+                android:text="Pickup Unit No.:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPickupUnitNo"
+
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00"/>
+        </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -98,20 +172,19 @@
             android:textStyle="bold"
          
             android:textColor="@color/gray"
-            android:text="Pick Up location"/>
+            android:text="Pickup location:"/>
+    </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvPickupLocation"
-         
-            android:layout_marginLeft="10dp"
             android:textColor="@color/gray"
             android:text="11 jan 2021,11:00"/>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_marginTop="30dp">
         <TextView
             android:layout_width="wrap_content"
@@ -119,17 +192,36 @@
             android:textStyle="bold"
          
             android:textColor="@color/gray"
-            android:text="Delivery"/>
+            android:text="Delivery Date:"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvDelivetyDate"
          
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:textColor="@color/gray"
             android:text="11 jan 2021,11:00"/>
     </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
 
+                android:textColor="@color/gray"
+                android:text="Drop Unit No.:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDropUnitNo"
+
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/gray"
+                android:text="11 jan 2021,11:00"/>
+        </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -139,16 +231,15 @@
             android:textStyle="bold"
          
             android:textColor="@color/gray"
-            android:text="Drop Location"/>
+            android:text="Drop Location:"/>
+    </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvDropLocation"
-         
-            android:layout_marginLeft="10dp"
             android:textColor="@color/gray"
             android:text="11 jan 2021,11:00"/>
-    </LinearLayout>
+
     </LinearLayout>
     </LinearLayout>
     <TableRow android:layout_width="match_parent"

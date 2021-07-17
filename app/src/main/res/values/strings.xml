@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">DriverApplication</string>
+    <string name="app_name">Weload Driver</string>
     <string name="forgot_password">Forgot Password ?</string>
     <string name="mobile">Mobile Number</string>
+    <string name="digit_mobile">8 Digit Mobile Number</string>
     <string name="password">Password </string>
     <string name="login">Login </string>
     <string name="back">Back </string>
@@ -16,11 +17,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weload_drover">Weload Driver </string>
     <string name="select_country">Select Country </string>
-    <!--   <string name="map_key" translatable="false">AIzaSyDjMjtxKQLy2i7wTzEQSpjltPgjMYg45VM</string>-->
-    <string name="map_key" translatable="false">AIzaSyATx-84Cf37b06o4_tTNOqdx4ql7wEuU9M</string>]
-
+     <string name="map_key" translatable="false">AIzaSyDhjAajPL7F9S72YgWv_NRnvpF-tX7EZD0</string>
+    <!-- <string name="map_key" translatable="false">AIzaSyATx-84Cf37b06o4_tTNOqdx4ql7wEuU9M</string>-->
+     <!--<string name="map_key" translatable="false">AIzaSyBqLLTPEft7TAE_KTNS-np4i3edBWv0SCQ</string>-->
 
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

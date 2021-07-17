@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.view.activites.JobListActivity">
+    <include layout="@layout/layout_toolbar1"
+        android:id="@+id/layout_tool"/>
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@id/layout_tool"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/layoutFrom"
+            android:background="@drawable/icon_background">
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="From"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/ic_calendar_white"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/layoutTo"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_background">
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="To"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_calendar_white"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutSearch"
+            android:background="@drawable/icon_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Search"
+
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/topDivider"
+        android:background="@color/splash_color"
+        android:layout_below="@+id/top"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rvJobs" />
+
+</RelativeLayout>

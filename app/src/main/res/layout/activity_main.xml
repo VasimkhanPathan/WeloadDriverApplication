@@ -6,18 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="2"
+    android:background="@color/white"
     tools:context=".splash.MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bottom_rounded_corner"
+        android:background="@drawable/bottom_rounde_cornor_gray"
         android:gravity="center"
         android:layout_weight="1">
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_we_load_logo_02"
+            android:src="@drawable/ic_weload_driver_logo_02"
            />
     </LinearLayout>
     <LinearLayout
@@ -28,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:layout_gravity="bottom"
-            android:src="@drawable/ic_truck_01"/>
+            android:src="@drawable/ic_login_logo"/>
 </LinearLayout>
 
 </LinearLayout>

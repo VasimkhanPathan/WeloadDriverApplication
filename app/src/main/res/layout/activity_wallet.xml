@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobDescription.view.activities.WalletActivity">
+    <include layout="@layout/layout_toolbar1"
+        android:id="@+id/layout_tool"/>
+    <LinearLayout
+        android:id="@+id/walletLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_tool"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bottom_rounded_corner"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total collection"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCollection"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDeleviedJob"
+            android:text="205 Job Delived"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Collected"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/tvCashCollected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To be paid by Weload"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTobeCollected"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:visibility="gone"
+        android:layout_below="@+id/walletLayout"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="Total"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="$100000"
+                android:visibility="gone"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/layoutFrom"
+            android:background="@drawable/icon_background">
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="From"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/layoutTo"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_background">
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="10dp"
+                android:text="To"
+                android:textColor="@color/white"
+
+                android:layout_marginLeft="5dp"
+                />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_background">
+
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown" />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-30dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chevron_circle_down_solid" />
+
+            &lt;!&ndash; <Spinner
+                 android:id="@+id/tvTransction"
+                 android:layout_width="50dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="5dp"
+               android:gravity="center_vertical"
+                 android:text="last 15 t"
+                 android:textColor="@color/white"
+
+                 android:textSize="10dp" />
+             <TableRow android:layout_width="1dp"
+                 android:layout_height="match_parent"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="5dp"
+                 android:background="@color/white"/>
+             <ImageView
+                 android:layout_width="15dp"
+                 android:layout_height="15dp"
+                 android:layout_gravity="center_vertical"
+                 android:src="@drawable/ic_chevron_circle_down_solid"
+                 android:layout_marginRight="5dp"
+                 />&ndash;&gt;
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@id/walletLayout"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/layoutFrom"
+            android:background="@drawable/icon_background">
+            <TextView
+                android:id="@+id/tvFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="From"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/ic_calendar_white"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:id="@+id/layoutTo"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_background">
+            <TextView
+                android:id="@+id/tvTo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10dp"
+                android:text="To"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+            <TableRow android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_calendar_white"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutSearch"
+            android:background="@drawable/icon_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Search"
+
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/top"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvWallet"/>
+    </LinearLayout>
+</RelativeLayout>

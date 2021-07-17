@@ -16,7 +16,7 @@
         android:padding="10dp"
         android:id="@+id/tvTitle"
         android:textSize="18sp"/>
-    <com.vasim.driverapplication.custom_ui.CalendarView
+    <com.weload.driverapplication.custom_ui.CalendarView
         android:id="@+id/calendar_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
